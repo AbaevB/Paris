@@ -9,6 +9,38 @@
   <link rel="stylesheet" href="css/style.css">
  </head>
  <body>
-
+  <header class="header">
+    <div class="container clearfix">
+      <div class="header__left">
+        <a href="#" class="header__logo" tabindex="1">TravelCream</a>
+        <nav class="header__nav" aria-label="main navigation">
+          <ul class="header__list list-reset flex">
+            <li class="header__item"><a href="#" class="header__link">Flights</a></li>
+            <li class="header__item"><a href="#" class="header__link">Hotels</a></li>
+            <li class="header__item"><a href="#" class="header__link">Trips</a></li>
+            <li class="header__item"><a href="#" class="header__link">Activity</a></li>
+            <li class="header__item"><a href="#" class="header__link">Deals</a></li>
+          </ul>
+        </nav>
+      </div><!--/header-left-->
+      <div class="header__right">
+        <button class="btn btn-reset header__login">
+          Login
+        </button>
+      </div><!--/header-right-->
+    </div><!--/container-->
+  </header>
+  <section class="section-hero">
+    <div class="container">
+      <h1 class="main-title">Do you want to visit Paris?</h1>
+      <p class="section-hero__text">Why not</p>
+      <form action="https://jsonplaceholder.typicode.com/posts" method="post" class="hero-form">
+        <input class="hero-form__input" type="text" placeholder="Where are you leaving from?" name="where" >
+        <input class="hero-form__input" type="text" placeholder="Where do you want to go?" name="go">
+        <input class="hero-form__input hero-form__input_date" type="date" name="date" id="date">
+        <button aria-label="Submit form" type="submit" class="btn btn-reset hero-form__btn">Submit</button>
+      </form>
+    </div>
+  </section>
  </body>
  </html>
